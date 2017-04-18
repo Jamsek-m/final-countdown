@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Final Countdown" Height="71.833" Width="353.167">
 	<Grid>
-		<Button x:Name="gumb_start" Content="Start" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" Width="64" Height="20"/>
+		<Button x:Name="gumb_start" Content="Start" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" Width="64" Height="20" Click="gumb_start_Click"/>
 		<TextBox x:Name="vhod_ura" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24" TextAlignment="Center" FontSize="14" PreviewTextInput="vhod_ura_PreviewTextInput"/>
 		<Label x:Name="label" Content=":" HorizontalAlignment="Left" Margin="34,7,0,0" VerticalAlignment="Top" Height="23"/>
 		<TextBox x:Name="vhod_minuta" HorizontalAlignment="Left" Height="20" Margin="47,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center" PreviewTextInput="vhod_ura_PreviewTextInput"/>
 		<Label x:Name="label_Copy" Content=":" HorizontalAlignment="Left" Margin="70,7,0,0" VerticalAlignment="Top" Height="23"/>
 		<TextBox x:Name="vhod_sekunda" HorizontalAlignment="Left" Height="20" Margin="83,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center" PreviewTextInput="vhod_ura_PreviewTextInput"/>
-		<Button x:Name="gumb_stop" Content="Stop" HorizontalAlignment="Left" Margin="187,10,0,0" VerticalAlignment="Top" Width="64"/>
+		<Button x:Name="gumb_stop" Content="Stop" HorizontalAlignment="Left" Margin="187,10,0,0" VerticalAlignment="Top" Width="64" Click="gumb_stop_Click"/>
 		<Button x:Name="gumb_calc" Content="Input time" HorizontalAlignment="Left" Margin="256,10,0,0" VerticalAlignment="Top" Width="76" Click="gumb_calc_Click"/>
 
 	</Grid>

@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalCountdown"
         mc:Ignorable="d"
-        Title="Input time" Height="102" Width="203.834" Closing="Input_time_Closing">
+        Title="Input time" Height="102" Width="210.167" Closing="Input_time_Closing">
 	<Grid Margin="0,0,2,5">
-		<TextBox x:Name="vhod_ura" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24" TextAlignment="Center" FontSize="14"/>
+		<TextBox x:Name="vhod_ura" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24" TextAlignment="Center" FontSize="14" PreviewTextInput="vhod_ura_PreviewTextInput"/>
 		<Label x:Name="label" Content=":" HorizontalAlignment="Left" Margin="34,7,0,0" VerticalAlignment="Top" Height="23"/>
-		<TextBox x:Name="vhod_minuta" HorizontalAlignment="Left" Height="20" Margin="47,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center"/>
+		<TextBox x:Name="vhod_minuta" HorizontalAlignment="Left" Height="20" Margin="47,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center" PreviewTextInput="vhod_ura_PreviewTextInput"/>
 		<Label x:Name="label_Copy" Content=":" HorizontalAlignment="Left" Margin="70,7,0,0" VerticalAlignment="Top" Height="23"/>
-		<TextBox x:Name="vhod_sekunda" HorizontalAlignment="Left" Height="20" Margin="83,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center"/>
-		<Button x:Name="gumb_calc" Content="OK" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" Width="75" Click="gumb_calc_Click"/>
+		<TextBox x:Name="vhod_sekunda" HorizontalAlignment="Left" Height="20" Margin="83,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center" PreviewTextInput="vhod_ura_PreviewTextInput"/>
+		<Button x:Name="gumb_calc" Content="OK" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="75" Click="gumb_calc_Click"/>
 		<TextBox x:Name="vhod_ura_Copy" HorizontalAlignment="Left" Height="20" Margin="10,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24" TextAlignment="Center" FontSize="14" IsEnabled="False"/>
 		<Label x:Name="label_Copy1" Content=":" HorizontalAlignment="Left" Margin="34,37,0,0" VerticalAlignment="Top" Height="23"/>
 		<TextBox x:Name="vhod_minuta_Copy" HorizontalAlignment="Left" Height="20" Margin="47,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center" IsEnabled="False"/>
 		<Label x:Name="label_Copy2" Content=":" HorizontalAlignment="Left" Margin="70,37,0,0" VerticalAlignment="Top" Height="23"/>
 		<TextBox x:Name="vhod_sekunda_Copy" HorizontalAlignment="Left" Height="20" Margin="83,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23" FontSize="14" TextAlignment="Center" IsEnabled="False"/>
-		<Label x:Name="label1" Content="Current time" HorizontalAlignment="Left" Margin="111,40,0,0" VerticalAlignment="Top" Height="20" Width="79" Padding="5,1,5,0"/>
+		<Label x:Name="label1" Content="Current time" HorizontalAlignment="Left" Margin="120,40,0,0" VerticalAlignment="Top" Height="20" Width="79" Padding="5,1,5,0"/>
 
 	</Grid>
 </Window>

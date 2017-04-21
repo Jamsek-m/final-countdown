@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -32,6 +33,11 @@ namespace FinalCountdown {
 		}
 
 		private void gumb_calc_Click(object sender, RoutedEventArgs e) {
+			if (string.IsNullOrEmpty(vhod_ura.Text) || string.IsNullOrEmpty(vhod_minuta.Text) || string.IsNullOrEmpty(vhod_sekunda.Text)) {
+				this.Close();
+				return;
+			}
+
 			//preveri ce so vsi casi veljavni
 			if (!preveriVnos(vhod_ura.Text, vhod_minuta.Text, vhod_sekunda.Text)) {
 				MessageBox.Show("Wrong time format!\nInput correct format.", "Error!");
@@ -51,7 +57,7 @@ namespace FinalCountdown {
 
 		}
 
-		private Boolean preveriVnos(string ura, string minuta, string sekunda) {
+		private bool preveriVnos(string ura, string minuta, string sekunda) {
 			double H = Double.Parse(ura);
 			double m = Double.Parse(minuta);
 			double s = Double.Parse(sekunda);
@@ -74,6 +80,11 @@ namespace FinalCountdown {
 				main.Show();
 				//this.Close();
 			}
+		}
+
+		private void vhod_ura_PreviewTextInput(object sender, TextCompositionEventArgs e) {
+			Regex regex = new Regex("[^0-9]+");
+			e.Handled = regex.IsMatch(e.Text);
 		}
 	}
 }

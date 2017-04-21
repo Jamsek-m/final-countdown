@@ -15,3 +15,6 @@ d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdo
 d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdown\obj\Release\FinalCountdown.csproj.GenerateResource.Cache
 d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdown\obj\Release\FinalCountdown.exe
 d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdown\obj\Release\FinalCountdown.pdb
+d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdown\bin\Release\Hardcodet.Wpf.TaskbarNotification.dll
+d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdown\bin\Release\Hardcodet.Wpf.TaskbarNotification.pdb
+d:\users\miha_\documents\visual studio 2017\Projects\FinalCountdown\FinalCountdown\bin\Release\Hardcodet.Wpf.TaskbarNotification.xml

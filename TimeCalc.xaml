@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalCountdown"
         mc:Ignorable="d"
-        Title="Input time" Height="102" Width="210.167" Closing="Input_time_Closing">
+        Title="Input time" Height="104" Width="213.167" Closing="Input_time_Closing" Icon="icon.ico" KeyDown="Input_time_KeyDown">
 	<Grid Margin="0,0,2,5">
 		<TextBox x:Name="vhod_ura" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24" TextAlignment="Center" FontSize="14" PreviewTextInput="vhod_ura_PreviewTextInput"/>
 		<Label x:Name="label" Content=":" HorizontalAlignment="Left" Margin="34,7,0,0" VerticalAlignment="Top" Height="23"/>

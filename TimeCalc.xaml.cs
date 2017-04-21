@@ -13,19 +13,31 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace FinalCountdown {
 	/// <summary>
 	/// Interaction logic for TimeCalc.xaml
 	/// </summary>
 	public partial class TimeCalc : Window {
-
+		private DispatcherTimer timer;
 		private DateTime trenutni;
 		private bool zaprtoZOKGumbom;
 
 		public TimeCalc() {
 			InitializeComponent();
 			this.zaprtoZOKGumbom = false;
+
+			timer = new DispatcherTimer();
+			timer.Tick += Timer_tick;
+			timer.Interval = new TimeSpan(0, 0, 1);
+
+			timer.Start();
+
+			
+		}
+
+		private void Timer_tick(object sender, EventArgs e) {
 			this.trenutni = DateTime.Now;
 			vhod_ura_Copy.Text = trenutni.Hour.ToString();
 			vhod_minuta_Copy.Text = trenutni.Minute.ToString();
@@ -75,16 +87,22 @@ namespace FinalCountdown {
 		}
 
 		private void Input_time_Closing(object sender, System.ComponentModel.CancelEventArgs e) {
+			timer.Stop();
 			if (!this.zaprtoZOKGumbom) {
 				MainWindow main = new MainWindow();
 				main.Show();
-				//this.Close();
 			}
 		}
 
 		private void vhod_ura_PreviewTextInput(object sender, TextCompositionEventArgs e) {
 			Regex regex = new Regex("[^0-9]+");
 			e.Handled = regex.IsMatch(e.Text);
+		}
+
+		private void Input_time_KeyDown(object sender, KeyEventArgs e) {
+			if (e.Key == Key.Enter) {
+				gumb_calc_Click(sender, e);
+			}
 		}
 	}
 }

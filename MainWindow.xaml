@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FinalCountdown"
 		xmlns:tb="http://www.hardcodet.net/taskbar"
 		mc:Ignorable="d"
-        Title="Final Countdown" Height="74" Width="353.167" StateChanged="Final_Countdown_StateChanged" KeyDown="Final_Countdown_KeyDown">
+        Title="Final Countdown" Height="74" Width="353.167" StateChanged="Final_Countdown_StateChanged" KeyDown="Final_Countdown_KeyDown" Icon="icon.ico">
 	<Grid>
 		<Button x:Name="gumb_start" Content="Start" HorizontalAlignment="Left" Margin="118,10,0,0" VerticalAlignment="Top" Width="64" Height="20" Click="gumb_start_Click"/>
 		<TextBox x:Name="vhod_ura" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="24" TextAlignment="Center" FontSize="14" PreviewTextInput="vhod_ura_PreviewTextInput"/>
